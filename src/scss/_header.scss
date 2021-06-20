@@ -1,0 +1,81 @@
+.header {
+    display: flex;
+
+    margin-top: 60px !important ;
+    margin-bottom: 48px;
+    padding-top: 4px;
+    padding-bottom: 5px;
+
+    &__logo {
+        margin-right: 100px;
+    }
+
+    .mainNav {
+        display: flex;
+
+        justify-content: space-between;
+
+        width: 612px;
+        margin-right: 188px;
+
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 18px;
+
+        &__link {
+            color: #fff;
+            text-decoration: none;
+
+            &:hover, &:focus {
+                color: #1ABC0F;
+                outline: none;
+
+                cursor: pointer;
+            }
+        };
+    }
+
+    .socialLinks {
+        display: flex;
+        justify-content: space-between;
+
+        width: 120px;
+
+        &__svg {
+            &--vk {
+                width: 30px;
+                height: 18px;
+
+                fill: #fff;
+            }
+
+            &--instagram {
+                width: 18px;
+                height: 18px;
+
+                fill: #fff;
+            }
+
+            &--youtube {
+                width: 26px;
+                height: 18px;
+
+                fill: #fff;
+            }
+
+            &:hover{
+                fill: #1ABC0F;
+                cursor: pointer;
+            }
+        }
+    }
+
+    ul, li {
+        padding: 0;
+        margin: 0;
+
+        list-style-type: none;
+    }
+
+
+}
