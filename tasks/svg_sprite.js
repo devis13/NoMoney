@@ -13,6 +13,12 @@ module.exports = function svg_sprite() {
 				},
 				{
 					removeEmptyContainers: true
+				},
+				{
+					removeViewBox: true
+				},
+				{
+					removeAttrs: {attrs: '(fill)'},
 				}
 			]
 		}))

@@ -1,4 +1,43 @@
 .promo {
-    height: 760px;
-	margin-bottom: 114px;
+    display: flex;
+    justify-content: space-between;
+    
+
+    &__wrapContent {
+        width: 714px;
+    }
+
+    &__cta {
+        display: inline-block;
+
+        width: 714px;
+        margin-bottom: 40px;
+
+        font-size: 70px;
+        font-weight: 700;
+        line-height: 82px;
+    }
+
+    &__text {
+        @extend .promo__cta;
+
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+
+    &__btn {
+        margin-bottom: 165px;
+    }
+
+    &__btn--connect {
+        margin-right: 30px;
+    }
+
+    &__image {
+        width: 350px;
+        margin-top: 10px;
+        margin-right: 20px;
+    }
+
 }

@@ -1,0 +1,48 @@
+.advantages {
+
+
+    &__title {
+    }
+
+    &__list{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    &__item {
+        &:nth-child(1) {
+            & > svg {
+                width: 118px;
+                height: 118px;
+            }
+        }
+
+        &:nth-child(2) {
+            & > svg {
+                width: 118px;
+                height: 118px;
+            }
+        }
+
+        &:nth-child(3) {
+            & > svg {
+                width: 146px;
+                height: 93px;
+            }
+        }
+        
+    }
+}
+.advantage {
+    display: flex;
+
+    &_svg {
+        fill: #fff;
+    }
+
+    &__title {
+    }
+
+    &__text {
+    }
+}

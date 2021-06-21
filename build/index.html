@@ -17,43 +17,96 @@
 </head>
 
 <body>
+    <h1 class="_visually-hidden">Нет монет</h1>
 	<div class="promoBgContainer">
-	    <header class="_container header">
+	    <header class="header _container ">
+    <h2 class="_visually-hidden">Главная навигация</h2>
     <img src="./img/LOGO.png" alt="logo" width=184px height="21px" class="header__logo">
 
-    <ul class="header__nav mainNav">
-        <li class="mainNav__item"><a href="#" class="mainNav__link">Преимущества</a></li>
-        <li class="mainNav__item"><a href="#" class="mainNav__link">Принцип работы</a></li>
-        <li class="mainNav__item"><a href="#" class="mainNav__link">Адаптация</a></li>
-        <li class="mainNav__item"><a href="#" class="mainNav__link">FAQ</a></li>
-        <li class="mainNav__item"><a href="#" class="mainNav__link">Поддержка</a></li>
-    </ul>
+    <nav class="header__nav mainNav">
+        <ul class="mainNav__list">
+            <li class="mainNav__item"><a href="#" class="mainNav__link">Преимущества</a></li>
+            <li class="mainNav__item"><a href="#" class="mainNav__link">Принцип работы</a></li>
+            <li class="mainNav__item"><a href="#" class="mainNav__link">Адаптация</a></li>
+            <li class="mainNav__item"><a href="#" class="mainNav__link">FAQ</a></li>
+            <li class="mainNav__item"><a href="#" class="mainNav__link">Поддержка</a></li>
+        </ul>
+    </nav>
             
     <ul class="header__socials socialLinks">
         <li class="socialLinks__item"> 
-            <svg class="socialLinks__svg socialLinks__svg--vk" viewBox="0 0 30 18">
-                <use xlink:href="img/sprite.svg#vk_icon" class="socialLinks__use"></use>
-            </svg >
+            <a href="#" class="socialLinks__link">
+                <svg class="socialLinks__svg socialLinks__svg--vk" viewBox="0 0 30 18">
+                    <use xlink:href="img/sprite.svg#vk_icon" class="socialLinks__use"></use>
+                </svg >
+            </a>
         </li>
         <li class="socialLinks_item">
-            <svg class="socialLinks__svg socialLinks__svg--instagram" viewBox="0 0 18 18">
-                <use xlink:href="img/sprite.svg#instagram_icon" class="socialLinks__use"></use>
-            </svg >
-            
+            <a href="#" class="socialLinks__link">
+                <svg class="socialLinks__svg socialLinks__svg--instagram" viewBox="0 0 18 18">
+                    <use xlink:href="img/sprite.svg#instagram_icon" class="socialLinks__use"></use>
+                </svg >
+            </a>
         </li>
         <li class="socialLinks_item">
-            <svg class="socialLinks__svg socialLinks__svg--youtube" viewBox="0 0 26 18">
-                <use xlink:href="img/sprite.svg#youtube_icon" class="socialLinks__use"></use>
-            </svg >
+            <a href="#" class="socialLinks__link">
+                <svg class="socialLinks__svg socialLinks__svg--youtube" viewBox="0 0 26 18">
+                    <use xlink:href="img/sprite.svg#youtube_icon" class="socialLinks__use"></use>
+                </svg >
+            </a>
         </li>
     </ul>
 </header>
-        <section class="promo">
+        <section class="promo _container">
+    <div class="promo__wrapContent">
+        <h2 class="promo__title _visually-hidden">Промо</h2>
+        <strong class="promo__cta">Принимайте чаевые картой по QR‑коду</strong>
+        <p class="promo__text">Платформа «нетмонет» позволяет Гостю удобно оставить отзыв и отблагодарить персонал банковской картой</p>
+        <button class="promo__btn promo__btn--connect btn">Подключить заведение</button>
+        <button class="promo__btn promo__btn--tip btn btn--transparent">Оставить чаевые</button>
+    </div>
+
+    <div class="promo__wrapImage"><img src="../../img/promo_phones.png" alt="promo" class="promo__image"></di>
     
 </section>
 	</div>
 	<main class="main">
-        <h1>Hello World!</h1>
+        <div class="secondary-bgWrapper"><sections class="advantages">
+    <h2 class="advantages__title">Преимущества для заведения</h2>
+    <ul class="advantages__list">
+        <li class="advantages__item advantage">
+            <svg class="advantage_svg">
+                <use xlink:href="img/sprite.svg#advantage-Tip_icon"></use>
+            </svg>
+            <div class="advantage__content" >
+                <h3 class="advantage__title">Чаевые</h3>
+                <p class="advantage__text">До +30% дополнительных чаевых для персонала</p>
+            </div>
+        </li>
+        <li class="advantages__item advantage">
+            <svg class="advantage_svg" viewBox="0 0 118 118">
+                <use xlink:href="img/sprite.svg#advantage-Analytics_icon"></use>
+            </svg
+            >
+            <div class="advantage__content">
+                <h3 class="advantage__title">Аналитика</h3>
+                <p class="advantage__text">Дополнительный доход с моментальными выплатами</p>
+            </div>
+        </li>
+        <li class="advantages__item advantage">
+            <svg class="advantage_svg" viewBox="0 0 146 93">
+                <use xlink:href="img/sprite.svg#advantage-LoyalityOfGuests_icon"></use>
+            </svg>
+            <div class="advantage__content">
+                <h3 class="advantage__title">Лояльность гостей</h3>
+                <p class="advantage__text">Моментально реагируйте на обратную связь от Гостей</p>
+            </div>
+        </li>
+    </ul>
+
+    <a href="#" class="advantages__link">Презентация для <b>Салонов красоты</b></a>
+    <a href="#" class="advantages__link">Презентация для <b>Ресторанов</b></a>
+</sections></div>
     </main>
 	<footer class="footer"></footer>
 	<script src="js/libs.min.js"></script>

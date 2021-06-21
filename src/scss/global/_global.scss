@@ -43,6 +43,8 @@ html{
 
 html,
 body {
+	font-family: Roboto;
+
 	min-height: 100%;
 	position: relative;
 }
@@ -65,9 +67,49 @@ h6 {
 	margin: 0;
 }
 
+._visually-hidden:not(:focus):not(:active) {
+	position: absolute;
+	
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	
+	white-space: nowrap;
+	
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
 ._container {
-	max-width: 1204px;
-	margin: 0 auto;
+	@include container("1214px", "5px");
+	// max-width: 1204px;
+	// margin: 0 auto;
+}
+
+.btn {
+	width: 274px;
+	height: 57px;
+
+	color: #fff;
+	background-color: $inline-color;
+	border: 2px solid $inline-color;
+	border-radius: 8px;
+
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 21px;
+
+	@include btn_anim();
+	
+	&--transparent {
+		width: 220px;
+
+		color: $inline-color;
+		background-color: transparent;
+	}
 }
 
 .promoBgContainer {
@@ -92,4 +134,12 @@ h6 {
 		background-position: center;
 		background-position-y: -200px;
 	}
+}
+
+.primary-bgWrapper {
+	background-color: $primary-color;
+}
+
+.secondary-bgWrapper {
+	background-color: $secondary-color;
 }

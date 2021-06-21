@@ -13,7 +13,15 @@ module.exports = function svg_css() {
 				},
 				{
 					removeEmptyContainers: true
+				},
+				{
+					removeViewBox: true
+				},
+				{
+					removeUselessStrokeAndFill: true
 				}
+
+				
 			]
 		}))
 		.pipe(svgCss({
