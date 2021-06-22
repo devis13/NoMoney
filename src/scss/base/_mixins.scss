@@ -66,3 +66,44 @@
 	padding: 0 #{$padding};
 	margin: 0 auto;
 }
+
+@mixin font-styles($font-size:"18px",$font-weight:400,$line-height:"20px", $color:"#fff"){
+	font-size: #{$font-size};
+	font-weight: #{$font-weight};
+	line-height: #{$line-height};
+	color: #{$color};
+}
+
+@mixin svg-style($width:"18px",$height:"18px",$fill:"#fff"){
+	width: #{$width};
+	height: #{$height};
+	fill: #{$fill};
+}
+
+@mixin icon-img($top: "0px", $left: "0px", $width: "20px", $height: "20px", $src:"img/"){
+	content: '';
+	position: absolute;
+	top: #{$top};
+	left: #{$left};
+	
+	display: block;
+	width: #{$width};
+	height: #{$height};
+	
+	background-image: url('#{$src}');
+	background-repeat: no-repeat;
+	background-color: red;
+}
+
+@mixin icon-form($top: "0px", $left: "0px", $width: "20px", $height: "20px", $color: red){
+	content: '';
+	position: absolute;
+	top: #{$top};
+	left: #{$left};
+	
+	display: block;
+	width: #{$width};
+	height: #{$height};
+	
+	background-color: #{$color};
+}

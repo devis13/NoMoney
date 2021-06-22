@@ -1,48 +1,112 @@
 .advantages {
 
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    border-top: 1px solid transparent;
+
 
     &__title {
+        margin-bottom: 115px;
+
+        text-align: center;
+
+        @include font-styles("50px", 700, "59px", "#fff");
     }
 
     &__list{
         display: flex;
         flex-wrap: nowrap;
+        justify-content: space-between;
+
+        padding: 0;
+        padding-left: 30px;
+    }
+
+    &__err-photo {
+        color: rgb(255, 7, 7);
     }
 
     &__item {
+        flex: 369px 0 1;
+
         &:nth-child(1) {
-            & > svg {
-                width: 118px;
-                height: 118px;
+            flex: 355px 0 1;
+            svg {
+                margin-right: 33px;
+
+                @include svg-style("118px", "118px", "#{$inline-color}");
             }
         }
 
         &:nth-child(2) {
-            & > svg {
-                width: 118px;
-                height: 118px;
-            }
+            @extend .advantages__item:nth-child(1);
         }
-
+        
         &:nth-child(3) {
-            & > svg {
-                width: 146px;
-                height: 93px;
+            svg {
+                margin-right: 19px;
+
+                @include svg-style("146px", "93px", "#{$inline-color}");
             }
         }
         
+    }
+
+    &__links {
+        text-align: center;
+    }
+
+    &__link {
+        display: inline-block;
+
+        width: 195px;
+        padding: 18px 0;
+
+        background-color: $highlight-color;
+        border: none;
+        border-radius: 8px;
+        outline: none;
+
+        transition: all 0.2s linear;
+
+        @include font-styles("15px", 400, "18px", "#fff");
+
+        &:hover, &:focus {
+            color: $inline-color;
+
+            transform: scale(1.1);
+        }
+
+        &:nth-child(1) {
+            width: 223px;
+            margin-right: 40px;
+        }
+
     }
 }
 .advantage {
     display: flex;
 
+    margin-bottom: 75px;
+
+    align-items: center;
+
     &_svg {
-        fill: #fff;
+    }
+
+    &__content {
     }
 
     &__title {
+        margin-bottom: 15px;
+
+        @include font-styles("22px", 500, "26px", "#fff");
     }
 
     &__text {
+        width: 204px;
+
+        @include font-styles("15px", 400, "18px", "#fff");
     }
 }

@@ -29,7 +29,7 @@ exports.default = gulp.parallel(
 	exports.webp,
 	exports.svg_css,
 	exports.svg_sprite,
-	exports.ttf,
+	// exports.ttf,
 	exports.fonts,
 	exports.html,
 	exports.bs_html,
