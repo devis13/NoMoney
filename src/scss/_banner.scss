@@ -1,0 +1,33 @@
+.banner {
+    background-color: $secondary-color;
+    background-image: url('../img/banner-img.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 650px;
+    background-position-y: -175px;
+
+    &__gradient {
+        padding: 80px 0;
+
+        background: linear-gradient(90deg, rgba($inline-color, 1.0) 50%, rgba($inline-color, 0.2));
+    }
+
+    &__link {
+        display: inline-block;
+
+        margin-bottom: 15px;
+
+        @include font-styles("22px", 400, "26px", "#fff");
+
+        text-decoration: none;
+        outline: none;
+
+        &:hover, &:focus {
+            text-decoration: underline;
+        }
+    }
+
+    &__tagline {
+        @include font-styles("50px", 700, "59px", "#fff");
+    }
+}

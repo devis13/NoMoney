@@ -1,0 +1,72 @@
+.phones {
+
+    padding: 120px 0;
+
+    &__description {
+        margin-bottom: 80px;
+
+        text-align: center;
+
+        @include font-styles("50px", 700, "59px", "#fff");
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+
+        padding: 0;
+        margin: 0;
+
+        list-style-type: none;
+    }
+
+    &__item {
+        width: 388px;
+        padding: 0;
+        margin: 0;
+
+        align-items: middle;
+
+        &:nth-child(1) {
+            p::before{
+                @include icon-form("50%", 0, "10px", "10px", $inline-color);
+    
+                border-radius: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+    &__img {
+        display: block;
+
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
+    &__text {
+        position: relative;
+        display: block;
+        height: 52px;
+
+        text-align: center;
+        
+        &::after{
+            @include icon-form("50%", "103%", "10px", "10px", $inline-color);
+
+            border-radius: 50%;
+            transform: translateY(-50%);
+        }
+
+        @include font-styles("22px", 400, "26px", "#fff");
+
+    }
+
+    &__subscriptions {
+        margin-top: 40px;
+
+        text-align: center;
+
+        @include font-styles("15px", 400, "18px", "#{$inline-color}");
+    }
+}

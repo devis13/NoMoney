@@ -61,6 +61,7 @@
         display: inline-block;
 
         width: 195px;
+        margin-top: 75px;
         padding: 18px 0;
 
         background-color: $highlight-color;
@@ -88,15 +89,7 @@
 .advantage {
     display: flex;
 
-    margin-bottom: 75px;
-
     align-items: center;
-
-    &_svg {
-    }
-
-    &__content {
-    }
 
     &__title {
         margin-bottom: 15px;
